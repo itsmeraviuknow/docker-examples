@@ -1,0 +1,12 @@
+version: '2'
+services: 
+  website:
+    container_name: php72
+    image: php_img
+    build:
+      context: ./
+    volumes: 
+      - /home/ravig/docker_example/src:/var/www/html
+    ports:
+      - 8000:85
+
